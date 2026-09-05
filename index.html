@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>WARKA MENU</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0 10px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      
+      /* Картинка фонового кальяна */
+      background-image: url('bg.png');
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: 100% auto;
+      background-color: #121212;
+      
+      color: #2b2b2b;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+
+    .menu-block {
+      background-color: #ffffff;
+      max-width: 900px;
+      width: 100%;
+      padding: 40px 50px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+	  margin-top: 45vw;
+	  margin-bottom: 50px;
+	 
+    }
+
+    h1 {
+      text-align: left;
+      color: #1a1a1a;
+      margin-top: 0;
+      margin-bottom: 35px;
+      font-weight: 400;
+      font-size: 2em;
+      letter-spacing: 0.5px;
+    }
+
+    .category {
+      margin-bottom: 45px;
+    }
+
+    .category h2 {
+      font-weight: 400;
+      font-size: 1.25em;
+      color: #1a1a1a;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-top: 1px solid #b0b0b0;
+      border-bottom: 1px solid #b0b0b0;
+      padding: 12px 0;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    .item-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px 25px;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      line-height: 1.25;
+    }
+
+    .item-name {
+      font-weight: 600;
+      font-size: 1.1em;
+      color: #1a1a1a;
+      margin-bottom: 2px;
+    }
+
+    .item-portion, .item-desc {
+      font-weight: 400;
+      font-size: 0.88em;
+      color: #555555;
+      line-height: 1.35;
+      word-break: break-word;
+    }
+
+    .item-price {
+      font-weight: 500;
+      font-size: 0.95em;
+      color: #1a1a1a;
+      margin-top: 4px;
+    }
+
+    /* ==========================================
+       МОБИЛЬНАЯ ВЕРСИЯ (принудительный перенос)
+       ========================================== */
+    @media screen and (max-width: 768px) {
+      .bg-header {
+        padding-top: 220vw !important; /* Увеличиваем верхний отступ под телефонную картинку */
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      .menu-block {
+        padding: 25px 18px !important;
+      }
+
+      /* ГАРАНТИРОВАННО 1 КОЛОНКА НА ТЕЛЕФОНЕ */
+      .item-grid {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+      }
+
+      h1 {
+        font-size: 1.5em !important;
+        margin-bottom: 20px !important;
+      }
+
+      .category h2 {
+        font-size: 1.1em !important;
+      }
+    }
+  </style>
+</head>
+<body>
+ <div class="menu-block">
+    <h1>WARKA MENU</h1>
+
+<section class="category">
+     <h2>KOKTAJLE</h2>
+     <div class="item-grid">
+		<div class="item">
+			<div class="item-name">Warka Calimocho</div>
+			<div class="item-desc">Wino + Cola</div>
+			<div class="item-price">15 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Marlo</div>
+			<div class="item-desc">Rum + Cola</div>
+			<div class="item-price">25 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Be-ton</div>
+			<div class="item-desc">Becherovka + Tonik</div>
+			<div class="item-price">25 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Whisky+Cola</div>
+			<div class="item-desc"></div>
+			<div class="item-price">25 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Gin+Tonic</div>
+			<div class="item-desc"></div>
+			<div class="item-price">25 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Jäger Bomba</div>
+			<div class="item-desc"></div>
+			<div class="item-price">25 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Mojito</div>
+			<div class="item-desc">Rum/Sprite/Sok limonki/Sok cytrynowy/Syrop cykrowy/Cytryna</div>
+			<div class="item-price">27 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Blue Lagoon</div>
+			<div class="item-desc">Wódka/Sprite/Blue curasao/Sok cytrynowy/Cytryna</div>
+			<div class="item-price">27 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Kraken</div>
+			<div class="item-desc">Wódka/Energetyk/Sok pomarańczowy/Syrop cytrynowy/Grenadina/Owoce</div>
+			<div class="item-price">27 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Sex on the Beach</div>
+			<div class="item-desc"></div>
+			<div class="item-price">27 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Aperol Spritz</div>
+			<div class="item-desc"></div>
+			<div class="item-price">27 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Malibu</div>
+			<div class="item-desc"></div>
+			<div class="item-price">27 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Sambuca</div>
+			<div class="item-desc"></div>
+			<div class="item-price">27 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Absinthe</div>
+			<div class="item-desc"></div>
+			<div class="item-price">27 zł</div>
+		</div>
+	</div>
+</section>
+<section class="category">
+	<h2>SHOTY</h2>
+	<div class="item-grid">
+		<div class="item">
+			<div class="item-name">Kamikaze</div>
+			<div class="item-desc">4 szt
+Wódka/Blue curacao/Sok limonky/Sok cytrynowy</div>
+			<div class="item-price">25 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Exotic</div>
+			<div class="item-desc">4 szt
+Wódka/Grenadina/Sok pomarańczowy/Sok Brzoskwiniowy </div>
+			<div class="item-price">25 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Maru</div>
+			<div class="item-desc">4 szt
+Maliby/Gin/Sok pomarańczowy/Limonka/Sok ananasowy/ Mix syropów</div>
+			<div class="item-price">30 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">B-52</div>
+			<div class="item-desc">1 szt
+Kahlua/Baileys/Absinth</div>
+			<div class="item-price">18 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Hiroshima</div>
+			<div class="item-desc">1 szt
+Sambuca/Baileys/Absinth/Grenadina</div>
+			<div class="item-price">18 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Gin</div>
+			<div class="item-desc"></div>
+			<div class="item-price">50ml 15 zł</div>
+            <div class="item-price">0,7L 170 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Tequila</div>
+			<div class="item-desc"></div>
+			<div class="item-price">50ml 17 zł</div>
+            <div class="item-price">0,7L 200 zł</div>
+		</div>
+			<div class="item">
+			<div class="item-name">Jagermeister</div>
+			<div class="item-price">50ml 17 zł</div>
+			<div class="item-price">0,7L 200 zł</div>
+        </div>
+        <div class="item">
+			<div class="item-name">Becherovka</div>
+			<div class="item-price">50ml 17 zł</div>
+			<div class="item-price">0,5L 150 zł</div>
+		</div>
+	</div>
+	</section>
+<section class="category">
+	<h2>WÓDKA</h2>
+		<div class="item-grid">
+		<div class="item">
+			<div class="item-name">Finlandia</div>
+			<div class="item-price">50ml 13 zł</div>
+			<div class="item-price">0,5L 120 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Żubrówka</div>
+			<div class="item-price">50ml 11 zł</div>
+			<div class="item-price">0,5L 100 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Soplica</div>
+			<div class="item-price">50ml 10 zł</div>
+			<div class="item-price">0,5L 80 zł</div>
+		</div>
+	</section>
+<section class="category">
+	<h2>WHISKY</h2>
+		<div class="item-grid">
+		<div class="Item">
+			<div class="item-name">Calvas 12 y.o.</div>
+			<div class="item-price">50ml 25 zł</div>
+			<div class="item-price">0,7L 320zł</div>
+		</div>
+		<div class="Item">
+			<div class="item-name">Jack Daniels</div>
+			<div class="item-price">50ml 20 zł</div>
+			<div class="item-price">0,7L 230 zł</div>
+		</div>
+		<div class="Item">
+			<div class="item-name">Jameson</div>
+			<div class="item-price">50ml 18 zł</div>
+			<div class="item-price">0,7L 200 zł</div>
+		</div>
+		<div class="Item">
+			<div class="item-name">Jim Beam</div>
+			<div class="item-price">50ml 18 zł</div>
+			<div class="item-price">0,7L 200zł</div>
+		</div>
+		<div class="Item">
+			<div class="item-name">Grant's</div>
+			<div class="item-price">50ml 15 zł</div>
+			<div class="item-price">0,7L 170zł</div>
+		</div>
+	</section>
+<section class="category">
+	<h2>WINO</h2>
+	<div class="item-grid">
+	<div class="item">
+		<div class="item-name">Prosecco</div>
+		<div class="item-price">100ml 15 zł</div>
+		<div class="item-price">0,75L 80 zł</div>
+	</div>
+		<div class="item">
+		<div class="item-name">Wino</div>
+		<div class="item-desc">Białe/Czerwone</div>
+		<div class="item-price">100ml 12 zł</div>
+		<div class="item-price">0,75L 60 zł</div>
+	</div>
+		<div class="item">
+		<div class="item-name">Wino musujące</div>
+		<div class="item-desc">    </div>
+		<div class="item-desc">    </div>
+		<div class="item-price">0,75L 40 zł</div>
+	</div>
+	</section> 
+<section class="category">
+	<h2>PIWO</h2>
+	<div class="item-grid">
+		<div class="item">
+		<div class="item-name">Corona</div>
+		<div class="item-desc">Extra/Zero</div>
+		<div class="item-price">0,33L 15 zł</div>
+	</div>
+		<div class="item">
+		<div class="item-name">Peroni</div>
+		<div class="item-price">0,33L 15 zł</div>
+	</div>
+		<div class="item">
+		<div class="item-name">Trybunal</div>
+		<div class="item-price">0,5L 15 zł</div>
+	</div>
+		<div class="item">
+		<div class="item-name">Łomza</div>
+		<div class="item-price">0,5L 15 zł</div>
+	</div>
+		<div class="item">
+		<div class="item-name">Garage</div>
+		<div class="item-desc">Różne smaki</div>
+		<div class="item-price">0,4L 15 zł</div>
+	</div>
+	</section>
+<section class="category">
+	<h2>ENERGGETYKY</h2>
+	<div class="item-grid">
+		<div class="item">
+		<div class="item-name">Red Bull</div>
+		<div class="item-desc">0,25L</div>
+		<div class="item-price">18 zł</div>
+	</div>
+		<div class="item">
+		<div class="item-name">Monster</div>
+		<div class="item-desc">0,5L</div>
+		<div class="item-price">15 zł</div>
+	</div>
+		<div class="item">
+		<div class="item-name">Black</div>
+		<div class="item-desc">0,25L</div>
+		<div class="item-price">12 zł</div>
+	</div>
+	</section>
+</body>
+</html>
