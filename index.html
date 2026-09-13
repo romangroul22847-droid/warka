@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,"/>
   <title>WARKA MENU</title>
   <style>
     * {
@@ -88,7 +88,7 @@
 			margin-bottom: 1px;
 		}
 
-		.item-portion, .item-desc {
+		.item-desc {
 			font-weight: 400;
 			font-size: 0.88em;
 			color: #555555;
@@ -105,13 +105,14 @@
 			color: #1a1a1a;
 			margin-top: auto;
 			padding-top: 8px;
+			margin-bottom: 10px;
 	    }
 		
 		.grid-subheader {
 			grid-column: 1/ -1;
 			font-weight: 700;
 			font-size: 1.15em;
-			color: #1a1a1a;
+			color: #2f4f4f;
 			text-transform: uppercase;
 			letter-spacing: 0.6px;
 			border-bottom: 1px dashed #b0b0b0;
@@ -131,7 +132,7 @@
 			width: 100%;
 		}
 		
-		.footer-info .adress {
+		.footer-info .address {
 			font-size: 1rem;
 			line-height: 1.4;
 			color: #333333;
@@ -145,35 +146,68 @@
 			letter-spacing: 0.5px;
 			color: #000000;
 		}
+		
+		.section-nowosci {
+			margin-bottom: 60px;
+		}
+		
+		.sub-category-title {
+			font-weight: 700;
+			font-size: 1.1em;
+			color: #2f4f4f;
+			text-transform: uppercase;
+			letter-spacing: 0.6px;
+			margin-top: 25px;
+			margin-bottom: 12px;
+		}
+		
+		.nowosci-group {
+			margin-bottom: 25px;
+		}
+		
+		.nowosci-group:last-child {
+			margin-bottom: 0;
+		}
+		
 	@media screen and (max-width: 768px) {
 		
 		.menu-block {
-			padding: 25px 18px !important;
+			padding: 25px 18px;
         }
 
 		.item-grid {
-			grid-template-columns: 1fr !important;
-			gap: 24px !important;
+			grid-template-columns: 1fr;
+			gap: 24px;
 		}
 
 		h1 {
-        font-size: 1.5em !important;
-			margin-bottom: 20px !important;
+			font-size: 1.5em;
+			margin-bottom: 20px;
 		}
 
 		.category h2 {
-			font-size: 1.1em !important;
+			font-size: 1.1em;
 		}
-		.footer-info {
-			margin-top: 30px !important;
-			padding-top: 15px !important;
+		
+		.nowosci-group {
+			margin-bottom: 20px;
+		}
+		
+		.sub-category-title {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		
+		}		.footer-info {
+			margin-top: 30px;
+			padding-top: 15px;
 		}
 	
-		.footer-info .adress {
-			font-size: 0.9rem !important;
+		.footer-info .address {
+			font-size: 0.9rem;
 		}
 		.footer-info .slogan {
-			font-size: 1rem !important;
+			font-size: 1rem
 		}
 	}
 	
@@ -183,6 +217,58 @@
 <body>
  <div class="menu-block">
     <h1>WARKA MENU</h1>
+<section class="category section-nowosci">
+	<h2>NOWOŚCI</h2>
+	
+<div class="nowosci-group">
+	<div class="sub-category-title">SHOTY</div>
+	<div class="item-grid">
+		<div class="item">
+			<div class="item-name">Wujek Iwan</div>
+			<div class="item-desc">1 szt.<br>Wódka/Sok cytrynowy/Grenadyna</div>
+			<div class="item-price">8 zł</div>
+		</div>
+	</div>
+</div>	
+<div class="nowosci-group">
+	<div class="sub-category-title">WÓDKA</div>
+	<div class="item-grid">
+		<div class="item">
+			<div class="item-name">Mickiewicz</div>
+			<div class="item-price">
+			<span>50 ml 10 zł</span>
+			<span>0,5 L 100 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Soplica Kawowa</div>
+			<div class="item-price">
+			<span>50 ml 10 zł</span>
+			<span>0,5 L 100 zł</span>
+		</div>
+	</div>
+</div>
+		
+<div class="nowosci-group">
+	<div class="sub-category-title">WINO</div>
+	<div class="item-grid">
+		<div class="item">
+			<div class="item-name">Martini Bianco</div>
+			<div class="item-price">
+			<span>100 ml 15 zł</span>
+			<span>1 L 120 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Martini Fiero</div>
+			<div class="item-price">
+			<span>100 ml 15 zł</span>
+			<span>1 L 120 zł</span>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
 
 <section class="category">
 	<h2>KOKTAJLE</h2>
@@ -270,7 +356,7 @@
 		</div>
 		<div class="item">
 			<div class="item-name">Maru</div>
-			<div class="item-desc">4 szt.<br>Malibu/Gin/Sok pomarańczowy/Limonka/Sok ananasowy/ Mix syropów</div>
+			<div class="item-desc">4 szt.<br>Malibu/Gin/Sok pomarańczowy/Limonka/Sok ananasowy/Mix syropów</div>
 			<div class="item-price">30 zł</div>
 		</div>
 		<div class="item">
@@ -285,7 +371,7 @@
 		</div>
 		<div class="item">
 			<div class="item-name">Wujek Iwan</div>
-			<div class="item-desk">1szt.<br>Wódka/Sok cytrynowy/Grenadyna</div>
+			<div class="item-desc">1 szt.<br>Wódka/Sok cytrynowy/Grenadyna</div>
 			<div class="item-price">8 zł</div>
 		</div>
 		
@@ -622,7 +708,7 @@
 </section>
 
 <div class="footer-info">
-	<p class="adress">Piotrków Trybunalski,<br>ul. Wojska Polskiego 63</p>
+	<p class="address">Piotrków Trybunalski,<br>ul. Wojska Polskiego 63</p>
 	<p class="slogan">STOP THINKING, START DRINKING</p>
 	</div>	
 </div>
